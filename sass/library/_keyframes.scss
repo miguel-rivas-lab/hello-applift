@@ -1,0 +1,47 @@
+@keyframes saturn_rotation
+{
+	from
+	{
+		transform: rotateZ(0deg);
+	}
+	to
+	{
+		transform: rotateZ(10deg);
+	}
+}
+
+@keyframes rtr
+{
+	from
+	{
+		transform: rotateZ(0);
+	}
+	to
+	{
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes rtl
+{
+	from
+	{
+		transform: rotateZ(0);
+	}
+	to
+	{
+		transform: rotateZ(-360deg);
+	}
+}
+
+@keyframes wave
+{
+	from
+	{
+		transform: translateY(0) rotateZ(2deg);
+	}
+	to
+	{
+		transform: translateY(25px) translateX(-5px) rotateZ(5deg);
+	}
+}

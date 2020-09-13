@@ -1,0 +1,47 @@
+@include define-icon-font('icomoon', '../fonts/icomoon', 'ttg2g5');
+@include define-font('leaguegothic', normal, normal, '../fonts/leaguegothic', league_gothicregular);
+
+.icon
+{
+	&:before
+	{
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	&.about_me:before {
+		content: "\e604";
+	}
+	&.issuu:before {
+		content: "\e605";
+	}
+	&.codepen:before {
+		content: "\eae5";
+	}
+	&.behance:before {
+		content: "\e600";
+	}
+	&.linkedin:before {
+		content: "\e602";
+	}
+	&.mail:before {
+		content: "\ea86";
+	}
+	&.google_plus:before {
+		content: "\ea8b";
+	}
+	&.vimeo:before {
+		content: "\e900";
+	}
+	&.website:before {
+		content: "\e135";
+	}
+}

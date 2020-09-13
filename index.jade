@@ -1,0 +1,155 @@
+doctype html
+html
+	head
+		meta(name="robots", content="noindex, nofollow")
+		include jade/vars
+		include jade/functions
+		include jade/metatags
+		link(href="https://fonts.googleapis.com/css?family=Montserrat:400|Orbitron:900", rel="stylesheet", type="text/css")
+		link(href="css/style.css", rel="stylesheet")
+		include jade/analytics
+
+	body
+
+		header
+			+imgTag( "spaceship.png", "flyObj spaceship" )
+			h1
+				| Hello
+				strong Applift
+
+		main
+			section.planets
+				.glow_01.flyObj(data-stellar-ratio="2")
+
+				+imgTag( "saturn.png", "flyObj saturn", "0.7" )
+				.glow_03.flyObj.rtl(data-stellar-ratio="1.5")
+					.base
+						span.point_01
+						span.point_02
+						span.point_03
+
+			section.letter
+				.glow_02.flyObj.rtr(data-stellar-ratio="2")
+
+				.textbox
+					p hi!
+					p I am a Frontend Developer who lives in Santo Domingo and I'm looking forward to join your team. I've been working for a while developing websites with CSS animations for top brands as Cerveza Presidente.
+
+					p It has been a really good journey but right now i'll like to expand my knowledge and explore the best pratices around the world.
+
+					p I've been working with tools like Github, Jade/Haml, Sass/Less And PHP/Ruby. I hope my portfolio can get your attention, since i'm really interested in learning more from Applift.
+
+					p In the bottom i attached my linkedin and codepend account, my e-mail and my portfolio.
+
+					p I'm really looking forward to hear from you. <em>:)</em>
+
+				+imgTag( "uranus.png", "flyObj uranus rtr", "0.8" )
+
+			section.projects
+				h2
+					| Some
+					strong Projects
+
+
+				button.drlogic
+					+imgTag( "dr-logic.png" )
+
+				button.timeline
+					+imgTag( "evolution.png" )
+
+				button.presidente
+					+imgTag( "presidente.png" )
+
+
+				section#modal
+					article.drlogic.info
+						.container
+							h3 DrLogic
+							p This was the second project that i worked at Pixel Perfect Tree. When it was giving to me it was an empty frontend with the provided design and a defined <em>.env.sample</em> with a basic configuration of the ports, <em>gitignored</em>, ruby version and some initial gems like <em>haml-rails</em> and <em>autoprefixer</em>.
+
+							p I install the missing gems for <em>bootstrap</em>, <em>rail-sass</em> and proposed to the lead developer a new way to defined metadata for every project. i wasn't sure how to do that in my second project in ruby on rails but i had an idea because i made something similar in <em>Jade</em> for my portfolio and in <em>PHP</em> for Cervesa Presidente. the specifications were a function which gets all the parameters that metadata will need:
+
+							ul
+								li Page details
+								li Page title
+								li Keys for SEO
+								li Icons in differents resolutions
+								li URL for Open Graph image (Facebook Preview)
+
+							p We agree and started an investigation for that issue them began to deploy a function similar but the parameters were in the translation file (something that was new for me but really handy). After that the project was ready to begin.
+
+							p There were a few things missing in the design that i made and them implemented:
+
+							ul
+								li Page 404
+								li Facebook Preview
+								li Loading
+
+							section.links
+								a.infoBox(href="http://tinyurl.com/hw9vl3q", target="_blank")
+									+imgTag( "drlogic.png" )
+									.btn Go to DrLogic Home
+								
+								a.infoBox(href="http://tinyurl.com/hea5t9n", target="_blank")
+									+imgTag( "drlogic_404.png" )
+									.btn Go to DrLogic 404 Page
+
+					article.timeline.info
+						.container
+							h3 Evolution of the Web
+							p This project was a research about basic info of the web, so the user in the end of the lecture can have a nice conversation of multiples topic with people of the area or RRHH. It was something like a community project.
+
+							p At first it was supossed to be a book to be publish in Issuu but i was talking about the web, a book that talk about the web is not that cool as a webpage that talk about the web. this was the first of his kind in my portfolio.
+
+							section.links
+								a.infoBox(href="http://aguacatekun.com/project/timeline/", target="_blank")
+									+imgTag( "timeline.jpg" )
+									.btn Go to Evolution of the Web
+
+								a.infoBox(href="http://aguacatekun.com/project/html-love/", target="_blank")
+									+imgTag( "html-love.jpg" )
+									.btn Go to HTML-Love
+								
+
+					article.presidente.info
+						.container
+							h3 Carnaval Presidente 2015
+
+							p This was the first big project that i worked without Backend Developer at Capital DBG.
+
+							p When it was giving to me it was just the provided design, I build the project them the optimization began.
+
+							p The specifications were made the website the fastest that it could because there was a lot of content. I resize all the images to the minimum width/height them optimized and made an special typography with all the icons needed.
+
+							p After that i made individual loaders for every section and organize the info in a way that you will get the firsts sections at the begining then the galley start loading. this way you would see basic content at first while the gallery load.
+
+							p Things that were missing in the design that i made and them implemented:
+
+							ul
+								li Facebook Preview
+								li Loading
+
+							section.links
+								a.infoBox(href="http://presidente.com.do/carnaval/2015/home.php", target="_blank")
+									+imgTag( "carnaval.jpg" )
+									.btn Go to Carnaval Presidente
+
+				+imgTag( "comet_01.png", "flyObj comet comet_01", "1.2" )
+				+imgTag( "comet_02.png", "flyObj comet comet_02", "1.3" )
+				+imgTag( "comet_03.png", "flyObj comet comet_03", "1.4" )
+				+imgTag( "glow_01.png", "flyObj glow_04 rtr", "0.8" )
+				.sun.rtl
+
+			footer
+				.textbox.t03
+					.link
+						a.icon.website(href="http://aguacatekun.com", target="_blank")
+						a.icon.codepen(href="http://codepen.io/aguacatekun/", target="_blank")
+						a.icon.linkedin(href="https://www.linkedin.com/in/miguel-rivas-b576bb74", target="_blank")
+					a.mail(href="mailto:jmiguelrivassantos@gmail.com")
+						| jmiguelrivassantos@gmail.com
+
+		script(src="https://code.jquery.com/jquery-1.11.2.min.js", type="text/javascript")
+		script(src="js/jquery-stellar.js", type="text/javascript")
+		script(src="js/all.js", type="text/javascript")
+		script(src="js/application.js", type="text/javascript")
